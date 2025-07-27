@@ -28,7 +28,7 @@ class APIClient:
             url: URL | str,
             json: Any | None = None,
             data: RequestData | None = None,
-            file: RequestFiles | None = None
+            files: RequestFiles | None = None
     ) -> Response:
         """
         Выполняет POST-запрос.
@@ -36,10 +36,10 @@ class APIClient:
         :param url: URL-адрес эндпоинта.
         :param json: Данные в формате JSON.
         :param data: Форматированные данные формы (например, application/x-www-form-urlencoded).
-        :param file: Файлы для загрузки на сервер.
+        :param files: Файлы для загрузки на сервер.
         :return: Объект Response с данными ответа.
         """
-        return self.client.post(url, json=json, data=data, files=file)
+        return self.client.post(url, json=json, data=data, files=files)
 
     def patch(self, url: URL | str, json: Any | None = None) -> Response:
         """
