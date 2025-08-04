@@ -1,37 +1,10 @@
-from typing import TypedDict
-
 from httpx import Response
 
 from clients.api_client import APIClient
+from clients.files.files_schema import CreateFileResponseSchema, CreateFileRequestSchem
 from clients.private_http_builder import (
     AuthenticationUserDict, get_private_http_client
 )
-
-
-class File(TypedDict):
-    """
-    Описание структуры файла.
-    """
-    id: str
-    filename: str
-    directory: str
-    url: str
-
-
-class CreateFileRequestDict(TypedDict):
-    """
-    Описание структуры запроса на создание файла.
-    """
-    filename: str
-    directory: str
-    upload_file: str
-
-
-class CreateFileResponseDict(TypedDict):
-    """
-    Описание структуры ответа создания файла.
-    """
-    file: File
 
 
 class FilesClient(APIClient):
@@ -48,7 +21,7 @@ class FilesClient(APIClient):
         """
         return self.get(url=f"/api/v1/files/{file_id}")
 
-    def create_file_api(self, request: CreateFileRequestDict) -> Response:
+    def create_file_api(self, request: CreateFileRequestSchem) -> Response:
         """
         Метод создания файла.
 
@@ -57,8 +30,8 @@ class FilesClient(APIClient):
         """
         return self.post(
             url="/api/v1/files",
-            data=request,
-            files={"upload_file": open(request['upload_file'], 'rb')}
+            data=request.model_dump(by_alias=True, exclude={"upload_file"}),
+            files={"upload_file": open(request.upload_file, 'rb')}
         )
 
     def delete_file_api(self, file_id: str) -> Response:
@@ -70,9 +43,9 @@ class FilesClient(APIClient):
         """
         return self.delete(url=f"/api/v1/files/{file_id}")
 
-    def create_file(self, request: CreateFileRequestDict) -> CreateFileResponseDict:
+    def create_file(self, request: CreateFileRequestSchem) -> CreateFileResponseSchema:
         response = self.create_file_api(request=request)
-        return response.json()
+        return CreateFileResponseSchema.model_validate_json(response.text)
 
 
 def get_files_client(user: AuthenticationUserDict) -> FilesClient:

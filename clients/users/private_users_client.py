@@ -1,39 +1,10 @@
-from typing import TypedDict
-
 from httpx import Response
 
 from clients.api_client import APIClient
 from clients.private_http_builder import (
     get_private_http_client, AuthenticationUserDict
 )
-
-
-class User(TypedDict):
-    """
-    Описание структуры пользователя.
-    """
-    id: str
-    email: str
-    lastName: str
-    firstName: str
-    middleName: str
-
-
-class GetUserResponseDict(TypedDict):
-    """
-    Описание структуры ответа получения пользователя.
-    """
-    user: User
-
-
-class UpdateUserRequestDict(TypedDict):
-    """
-    Описание структуры запроса на обновление пользователя.
-    """
-    email: str | None
-    lastName: str | None
-    firstName: str | None
-    middleName: str | None
+from clients.users.users_schema import UpdateUserResponseSchema, GetUserResponseScheme
 
 
 class PrivateUsersClient(APIClient):
@@ -58,7 +29,7 @@ class PrivateUsersClient(APIClient):
         """
         return self.get(url=f"/api/v1/users/{user_id}")
 
-    def update_user_api(self, user_id: str, request: UpdateUserRequestDict) -> Response:
+    def update_user_api(self, user_id: str, request: UpdateUserResponseSchema) -> Response:
         """
         Метод обновления пользователя по идентификатору.
 
@@ -66,7 +37,7 @@ class PrivateUsersClient(APIClient):
         :param request: Словарь с email, lastName, firstName, middleName.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.patch(url=f"/api/v1/users/{user_id}", json=request)
+        return self.patch(url=f"/api/v1/users/{user_id}", json=request.model_dump(by_alias=True))
 
     def delete_user_api(self, user_id: str) -> Response:
         """
@@ -77,9 +48,9 @@ class PrivateUsersClient(APIClient):
         """
         return self.delete(url=f"/api/v1/users/{user_id}")
 
-    def get_user(self, user_id: str) -> GetUserResponseDict:
+    def get_user(self, user_id: str) -> GetUserResponseScheme:
         response = self.get_user_api(user_id=user_id)
-        return response.json()
+        return GetUserResponseScheme.model_validate_json(response.text)
 
 
 def get_private_users_client(user: AuthenticationUserDict) -> PrivateUsersClient:
