@@ -2,7 +2,7 @@ from httpx import Response
 
 from clients.api_client import APIClient
 from clients.private_http_builder import (
-    get_private_http_client, AuthenticationUserDict
+    get_private_http_client, AuthenticationUserSchema
 )
 from clients.users.users_schema import UpdateUserResponseSchema, GetUserResponseScheme
 
@@ -53,7 +53,7 @@ class PrivateUsersClient(APIClient):
         return GetUserResponseScheme.model_validate_json(response.text)
 
 
-def get_private_users_client(user: AuthenticationUserDict) -> PrivateUsersClient:
+def get_private_users_client(user: AuthenticationUserSchema) -> PrivateUsersClient:
     """
     Функция создаёт экземпляр PrivateUsersClient с уже настроенным HTTP-клиентом.
 
