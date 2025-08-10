@@ -1,3 +1,5 @@
+import pytest
+
 from http import HTTPStatus
 
 from clients.users.public_users_client import (
@@ -11,6 +13,8 @@ from tools.assertions.schema import validate_json_schema
 from tools.assertions.users import assert_create_user_response
 
 
+@pytest.mark.users
+@pytest.mark.regression
 def test_create_user():
     public_users_client = get_public_users_client()
 
