@@ -2,7 +2,7 @@ from httpx import Response
 
 from clients.api_client import APIClient
 from clients.files.files_schema import (
-    CreateFileResponseSchema, CreateFileRequestSchem
+    CreateFileResponseSchema, CreateFileRequestSchema
 )
 from clients.private_http_builder import (
     AuthenticationUserSchema, get_private_http_client
@@ -23,7 +23,7 @@ class FilesClient(APIClient):
         """
         return self.get(url=f"/api/v1/files/{file_id}")
 
-    def create_file_api(self, request: CreateFileRequestSchem) -> Response:
+    def create_file_api(self, request: CreateFileRequestSchema) -> Response:
         """
         Метод создания файла.
 
@@ -45,7 +45,7 @@ class FilesClient(APIClient):
         """
         return self.delete(url=f"/api/v1/files/{file_id}")
 
-    def create_file(self, request: CreateFileRequestSchem) -> CreateFileResponseSchema:
+    def create_file(self, request: CreateFileRequestSchema) -> CreateFileResponseSchema:
         response = self.create_file_api(request=request)
         return CreateFileResponseSchema.model_validate_json(response.text)
 

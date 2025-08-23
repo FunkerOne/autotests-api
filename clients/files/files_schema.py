@@ -13,7 +13,7 @@ class FileSchema(BaseModel):
     url: HttpUrl
 
 
-class CreateFileRequestSchem(BaseModel):
+class CreateFileRequestSchema(BaseModel):
     """
     Описание структуры запроса на создание файла.
     """
@@ -26,4 +26,8 @@ class CreateFileResponseSchema(BaseModel):
     """
     Описание структуры ответа создания файла.
     """
+    file: FileSchema
+
+
+class GetFileResponseSchema(BaseModel):
     file: FileSchema

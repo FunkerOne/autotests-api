@@ -1,7 +1,7 @@
 from clients.courses.courses_client import get_courses_client
 from clients.courses.courses_schema import CreateCourseRequestScheme
 from clients.files.files_client import get_files_client
-from clients.files.files_schema import CreateFileRequestSchem
+from clients.files.files_schema import CreateFileRequestSchema
 from clients.private_http_builder import AuthenticationUserSchema
 from clients.users.public_users_client import get_public_users_client
 from clients.users.users_schema import CreateUserRequestSchema
@@ -18,7 +18,7 @@ authentication_user = AuthenticationUserSchema(
 files_client = get_files_client(user=authentication_user)
 courses_client = get_courses_client(user=authentication_user)
 
-create_file_request = CreateFileRequestSchem(
+create_file_request = CreateFileRequestSchema(
     upload_file="./testdata/files/image.png"
 )
 create_file_response = files_client.create_file(request=create_file_request)
