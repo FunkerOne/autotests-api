@@ -2,7 +2,7 @@ from pydantic import BaseModel, Field, ConfigDict
 from tools.fakers import fake
 
 
-class ExerciseScheme(BaseModel):
+class ExerciseSchema(BaseModel):
     """
     Описание структуры упражнения.
     """
@@ -18,7 +18,7 @@ class ExerciseScheme(BaseModel):
     estimated_time: str = Field(alias="estimatedTime")
 
 
-class GetExercisesQueryScheme(BaseModel):
+class GetExercisesQuerySchema(BaseModel):
     """
     Описание структуры запроса на получение упражнений.
     """
@@ -27,7 +27,7 @@ class GetExercisesQueryScheme(BaseModel):
     course_id: str = Field(alias="courseId")
 
 
-class CreateExerciseRequestScheme(BaseModel):
+class CreateExerciseRequestSchema(BaseModel):
     """
     Описание структуры запроса на создание упражнения.
     """
@@ -46,7 +46,7 @@ class GetExercisesResponseSchema(BaseModel):
     """
     Описание структуры ответа получения упражнениц.
     """
-    exercises: list[ExerciseScheme]
+    exercises: list[ExerciseSchema]
 
 
 class UpdateExerciseRequestSchema(BaseModel):
@@ -67,18 +67,18 @@ class GetExerciseResponseSchema(BaseModel):
     """
     Описание структуры запроса на получение упражнения.
     """
-    exercise: ExerciseScheme
+    exercise: ExerciseSchema
     
 
 class CreateExerciseResponseSchema(BaseModel):
     """
     Описание структуры запроса создание упражнения.
     """
-    exercise: ExerciseScheme
+    exercise: ExerciseSchema
 
 
 class UpdateExerciseResponseSchema(BaseModel):
     """
     Описание структуры запроса обновления упражнения.
     """
-    exercise: ExerciseScheme
+    exercise: ExerciseSchema

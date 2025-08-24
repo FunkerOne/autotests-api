@@ -2,8 +2,8 @@ from httpx import Response
 
 from clients.api_client import APIClient
 from clients.exercises.exercises_schema import (
-    GetExercisesQueryScheme,
-    CreateExerciseRequestScheme,
+    GetExercisesQuerySchema,
+    CreateExerciseRequestSchema,
     UpdateExerciseRequestSchema,
     GetExerciseResponseSchema,
     GetExercisesResponseSchema,
@@ -20,7 +20,7 @@ class ExercisesClient(APIClient):
     Класс для работы с /api/v1/exercises
     """
 
-    def get_exercises_api(self, query: GetExercisesQueryScheme) -> Response:
+    def get_exercises_api(self, query: GetExercisesQuerySchema) -> Response:
         """
         Метод получает все упражнения по идентификатору курса.
 
@@ -38,7 +38,7 @@ class ExercisesClient(APIClient):
         """
         return self.get(url=f"/api/v1/exercise/{exercise_id}")
 
-    def create_exercise_api(self, request: CreateExerciseRequestScheme) -> Response:
+    def create_exercise_api(self, request: CreateExerciseRequestSchema) -> Response:
         """
         Метод создания упражнения.
 
@@ -72,7 +72,7 @@ class ExercisesClient(APIClient):
         """
         return self.delete(url=f"/api/v1/exercises/{exercise_id}")
 
-    def get_exercises(self, query: GetExercisesQueryScheme) -> GetExercisesResponseSchema:
+    def get_exercises(self, query: GetExercisesQuerySchema) -> GetExercisesResponseSchema:
         response = self.get_exercises_api(query=query)
         return GetExercisesResponseSchema.model_validate_json(response.text)
 
@@ -80,7 +80,7 @@ class ExercisesClient(APIClient):
         response = self.get_exercise_api(exercise_id=exercise_id)
         return GetExerciseResponseSchema.model_validate_json(response.text)
 
-    def create_exercise(self, request: CreateExerciseRequestScheme) -> CreateExerciseResponseSchema:
+    def create_exercise(self, request: CreateExerciseRequestSchema) -> CreateExerciseResponseSchema:
         response = self.create_exercise_api(request=request)
         return CreateExerciseResponseSchema.model_validate_json(response.text)
 

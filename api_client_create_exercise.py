@@ -1,11 +1,11 @@
 from clients.courses.courses_client import (
     get_courses_client
 )
-from clients.courses.courses_schema import CreateCourseRequestScheme
+from clients.courses.courses_schema import CreateCourseRequestSchema
 from clients.exercises.exercises_client import (
     get_exercises_client
 )
-from clients.exercises.exercises_schema import CreateExerciseRequestScheme
+from clients.exercises.exercises_schema import CreateExerciseRequestSchema
 from clients.files.files_client import get_files_client
 from clients.files.files_schema import CreateFileRequestSchema
 from clients.private_http_builder import AuthenticationUserSchema
@@ -31,14 +31,14 @@ create_file_request = CreateFileRequestSchema(
 create_file_response = files_client.create_file(request=create_file_request)
 print("Create file data:", create_file_response)
 
-create_course_request = CreateCourseRequestScheme(
+create_course_request = CreateCourseRequestSchema(
     preview_file_id=create_file_response.file.id,
     created_by_user_id=create_user_response.user.id
 )
 create_course_response = courses_client.create_course(request=create_course_request)
 print("Create course data:", create_course_response)
 
-create_exercise_request = CreateExerciseRequestScheme(
+create_exercise_request = CreateExerciseRequestSchema(
     course_id=create_course_response.course.id
 )
 create_exercise_response = exercises_client.create_exercise(request=create_exercise_request)

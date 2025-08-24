@@ -7,7 +7,7 @@ from clients.users.public_users_client import (
     PublicUsersClient
 )
 from clients.users.users_schema import (
-    CreateUserRequestSchema, CreateUserResponseSchema, GetUserResponseScheme
+    CreateUserRequestSchema, CreateUserResponseSchema, GetUserResponseSchema
 )
 from fixtures.users import UserFixture
 from tools.assertions.base import assert_status_code
@@ -36,7 +36,7 @@ class TestUsers:
             function_user: UserFixture
     ):
         response = private_users_client.get_user_me_api()
-        response_data = GetUserResponseScheme.model_validate_json(response.text)
+        response_data = GetUserResponseSchema.model_validate_json(response.text)
 
         assert_status_code(response.status_code, HTTPStatus.OK)
 

@@ -5,8 +5,8 @@ from clients.private_http_builder import (
     AuthenticationUserSchema, get_private_http_client
 )
 from clients.courses.courses_schema import (
-    GetCoursesQueryScheme, CreateCourseRequestScheme,
-    UpdateCourseRequestScheme, CreateCourseResponseScheme
+    GetCoursesQuerySchema, CreateCourseRequestSchema,
+    UpdateCourseRequestSchema, CreateCourseResponseSchema
 )
 
 
@@ -15,7 +15,7 @@ class CoursesClient(APIClient):
     Клиент для работы с /api/v1/courses
     """
 
-    def get_courses_api(self, query: GetCoursesQueryScheme) -> Response:
+    def get_courses_api(self, query: GetCoursesQuerySchema) -> Response:
         """
         Метод получения списка курсов.
 
@@ -33,7 +33,7 @@ class CoursesClient(APIClient):
         """
         return self.get(url=f"/api/v1/courses/{course_id}")
 
-    def create_course_api(self, request: CreateCourseRequestScheme) -> Response:
+    def create_course_api(self, request: CreateCourseRequestSchema) -> Response:
         """
         Метод создания курса.
 
@@ -43,7 +43,7 @@ class CoursesClient(APIClient):
         """
         return self.post(url="/api/v1/courses", json=request.model_dump(by_alias=True))
 
-    def update_course_api(self, course_id: str, request: UpdateCourseRequestScheme) -> Response:
+    def update_course_api(self, course_id: str, request: UpdateCourseRequestSchema) -> Response:
         """
         Метод обновления курса.
 
@@ -62,9 +62,9 @@ class CoursesClient(APIClient):
         """
         return self.delete(url=f"/api/v1/courses/{course_id}")
 
-    def create_course(self, request: CreateCourseRequestScheme) -> CreateCourseResponseScheme:
+    def create_course(self, request: CreateCourseRequestSchema) -> CreateCourseResponseSchema:
         response = self.create_course_api(request=request)
-        return CreateCourseResponseScheme.model_validate_json(response.text)
+        return CreateCourseResponseSchema.model_validate_json(response.text)
 
 
 def get_courses_client(user: AuthenticationUserSchema) -> CoursesClient:

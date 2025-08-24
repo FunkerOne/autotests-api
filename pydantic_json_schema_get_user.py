@@ -1,7 +1,7 @@
 from clients.private_http_builder import AuthenticationUserDict
 from clients.users.private_users_client import get_private_users_client
 from clients.users.public_users_client import get_public_users_client
-from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema, GetUserResponseScheme
+from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema, GetUserResponseSchema
 from tools.assertions.schema import validate_json_schema
 from tools.fakers import get_random_email
 
@@ -23,6 +23,6 @@ authentication_user = AuthenticationUserDict(
 private_users_client = get_private_users_client(user=authentication_user)
 
 get_user_response = private_users_client.get_user_api(user_id=create_user_response.user.id)
-get_user_response_scheme = GetUserResponseScheme.model_json_schema()
+get_user_response_scheme = GetUserResponseSchema.model_json_schema()
 
 validate_json_schema(instance=get_user_response.json(), schema=get_user_response_scheme)

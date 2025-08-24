@@ -4,7 +4,7 @@ from clients.api_client import APIClient
 from clients.private_http_builder import (
     get_private_http_client, AuthenticationUserSchema
 )
-from clients.users.users_schema import UpdateUserResponseSchema, GetUserResponseScheme
+from clients.users.users_schema import UpdateUserResponseSchema, GetUserResponseSchema
 
 
 class PrivateUsersClient(APIClient):
@@ -48,9 +48,9 @@ class PrivateUsersClient(APIClient):
         """
         return self.delete(url=f"/api/v1/users/{user_id}")
 
-    def get_user(self, user_id: str) -> GetUserResponseScheme:
+    def get_user(self, user_id: str) -> GetUserResponseSchema:
         response = self.get_user_api(user_id=user_id)
-        return GetUserResponseScheme.model_validate_json(response.text)
+        return GetUserResponseSchema.model_validate_json(response.text)
 
 
 def get_private_users_client(user: AuthenticationUserSchema) -> PrivateUsersClient:
