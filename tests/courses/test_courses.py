@@ -10,6 +10,7 @@ from clients.courses.courses_schema import (
     GetCoursesResponseSchema, CreateCourseRequestSchema, CreateCourseResponseSchema
 )
 from fixtures.courses import CourseFixture
+from fixtures.files import FileFixture
 from fixtures.users import UserFixture
 from tools.assertions.base import assert_status_code
 from tools.assertions.courses import (
@@ -25,8 +26,8 @@ class TestCourses:
     def test_create_course(
             self,
             courses_client: CoursesClient,
-            function_file,
-            function_user
+            function_file: FileFixture,
+            function_user: UserFixture
 
     ):
         request = CreateCourseRequestSchema(
@@ -37,7 +38,7 @@ class TestCourses:
         response_data = CreateCourseResponseSchema.model_validate_json(response.text)
 
         assert_status_code(actual=response.status_code, expected=HTTPStatus.OK)
-        assert_create_course_response(response=response_data, request=request)
+        assert_create_course_response(request=request, response=response_data)
 
         validate_json_schema(instance=response.json(), schema=response_data.model_json_schema())
 

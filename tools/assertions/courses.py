@@ -73,11 +73,11 @@ def assert_create_course_response(
     :param response: Ответ API с данными курса.
     :raises AssertionError: Если хотя бы одно поле не совпадает.
     """
-    assert_equal(request.title, response.course.title, "title")
-    assert_equal(request.max_score, response.course.max_score, "max_score")
-    assert_equal(request.min_score, response.course.min_score, "min_score")
-    assert_equal(request.description, response.course.description, "description")
-    assert_equal(request.estimated_time, response.course.estimated_time, "estimate_time")
+    assert_equal(response.course.title, request.title, "title")
+    assert_equal(response.course.max_score, request.max_score, "max_score")
+    assert_equal(response.course.min_score, request.min_score, "min_score")
+    assert_equal(response.course.description, request.description, "description")
+    assert_equal(response.course.estimated_time, request.estimated_time, "estimate_time")
 
     assert_equal(response.course.preview_file.id, request.preview_file_id, "preview_file_id")
     assert_equal(response.course.created_by_user.id, request.created_by_user_id, "created_by_user_id")
