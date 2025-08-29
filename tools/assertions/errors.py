@@ -2,7 +2,8 @@ from tools.assertions.base import (
     assert_equal, assert_length
 )
 from clients.errors_schema import (
-    ValidationErrorSchema, ValidationErrorResponseSchema
+    ValidationErrorSchema, ValidationErrorResponseSchema,
+    InternalErrorResponseSchema
 )
 
 
@@ -37,3 +38,17 @@ def assert_validation_error_response(
 
     for index, detail in enumerate(expected.details):
         assert_validation_error(actual.details[index], detail)
+
+
+def assert_internal_error_response(
+        actual: InternalErrorResponseSchema,
+        expected: InternalErrorResponseSchema
+):
+    """
+    Функция для проверки внутренней ошибки. Например, ошибки 404 (File not found).
+
+    :param actual: Фактический ответ API.
+    :param expected: Ожидаемый ответ API.
+    :raises AssertionError: Если значения полей не совпадают.
+    """
+    assert_equal(actual.details, expected.details, "details")
