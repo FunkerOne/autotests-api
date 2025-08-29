@@ -36,7 +36,7 @@ class ExercisesClient(APIClient):
         :param exercise_id: Идентификатор упражнения
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.get(url=f"/api/v1/exercise/{exercise_id}")
+        return self.get(url=f"/api/v1/exercises/{exercise_id}")
 
     def create_exercise_api(self, request: CreateExerciseRequestSchema) -> Response:
         """
