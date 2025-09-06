@@ -2,6 +2,7 @@ import allure
 
 from httpx import Response
 
+from tools.routes import APIRoutes
 from clients.api_client import APIClient
 from clients.files.files_schema import (
     CreateFileResponseSchema, CreateFileRequestSchema
@@ -24,7 +25,7 @@ class FilesClient(APIClient):
         :param file_id: Идентификатор файла.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.get(url=f"/api/v1/files/{file_id}")
+        return self.get(url=f"{APIRoutes.FILES}/{file_id}")
 
     @allure.step("Create file")
     def create_file_api(self, request: CreateFileRequestSchema) -> Response:
@@ -35,7 +36,7 @@ class FilesClient(APIClient):
         :return: Ответ от сервера в виде объекта httpx.Response
         """
         return self.post(
-            url="/api/v1/files",
+            url=APIRoutes.FILES,
             data=request.model_dump(by_alias=True, exclude={"upload_file"}),
             files={"upload_file": request.upload_file.read_bytes()}
         )
@@ -48,7 +49,7 @@ class FilesClient(APIClient):
         :param file_id: Идентификатор файла.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.delete(url=f"/api/v1/files/{file_id}")
+        return self.delete(url=f"{APIRoutes.FILES}/{file_id}")
 
     def create_file(self, request: CreateFileRequestSchema) -> CreateFileResponseSchema:
         response = self.create_file_api(request=request)
