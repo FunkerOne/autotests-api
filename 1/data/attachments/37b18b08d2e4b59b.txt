@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTEyVDE3OjA2OjQyLjE4Mzg1NyIsInVzZXJfaWQiOiIzM2JiNzYwNS0wZjVlLTQ2ZGUtODNlYy1mMTZjZjAyMjg0ODgifQ.ONEQyS3x2w0dwv0WKbuYnvpn8cXVzqIUEL8iZtlwjLg' \
+  -H 'content-length: 351' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Fight loss purpose hospital site its window or.","maxScore":93,"minScore":14,"description":"Name outside product keep address. Identify finish ok feel window my. Lot away who involve town heart memory.","estimatedTime":"4 weeks","previewFileId":"2367f8bb-6290-4f62-bd3b-c2956345d362","createdByUserId":"33bb7605-0f5e-46de-83ec-f16cf0228488"}'

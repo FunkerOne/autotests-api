@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTEyVDE3OjA2OjQzLjM3MTY1NSIsInVzZXJfaWQiOiJlNzkzNmZlNy0zYWMzLTQ2ODgtYjZjOS02ZWI4Mjk3ODhjYzkifQ.1HoH7n3KCS06XtkXyCLIrGUQmrJJ6hkaph-2ZiSizfY' \
+  -H 'content-length: 322' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Reach value simply.","courseId":"01242390-3e1f-40a0-83ba-a33ead867fb9","maxScore":52,"minScore":6,"orderIndex":98,"description":"Whatever control evidence team western west. Follow challenge media scene five certain. International race pull blood human. Either run event there simply.","estimatedTime":"8 weeks"}'

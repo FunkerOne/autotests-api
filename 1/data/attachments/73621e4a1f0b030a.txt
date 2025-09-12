@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/f30826e5-047a-4da2-9d41-793bc62a27ea' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTEyVDE3OjA2OjQzLjA5NjY2MSIsInVzZXJfaWQiOiI4ZDA4MDg5Yy03OWEwLTQxOTktYjQ2OC02NGZkMWYzOWFlOTUifQ.4uVVLRM1wy-O2CV_usiGaJHngUhe4V7eDBydotBU8oA' \
+  -H 'content-length: 326' \
+  -H 'content-type: application/json' \
+  -d '{"title":"However real catch may car others minute on.","maxScore":72,"minScore":29,"description":"Scientist take especially source party think.\nListen doctor society event event major issue. Whose prepare white decide show. Service close politics.\nProcess building show project final wind sound.","estimatedTime":"3 weeks"}'

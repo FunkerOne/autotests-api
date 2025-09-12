@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTEyVDE3OjA2OjQzLjM3MTY1NSIsInVzZXJfaWQiOiJlNzkzNmZlNy0zYWMzLTQ2ODgtYjZjOS02ZWI4Mjk3ODhjYzkifQ.1HoH7n3KCS06XtkXyCLIrGUQmrJJ6hkaph-2ZiSizfY' \
+  -H 'content-length: 357' \
+  -H 'content-type: application/json' \
+  -d '{"title":"American tonight realize talk spend.","maxScore":95,"minScore":12,"description":"Decade enjoy activity play another clearly. Important everyone authority put drop. Argue wind customer dinner across far lose.","estimatedTime":"9 weeks","previewFileId":"cb7a7bb0-61bd-4328-8d22-756304e68e12","createdByUserId":"e7936fe7-3ac3-4688-b6c9-6eb829788cc9"}'

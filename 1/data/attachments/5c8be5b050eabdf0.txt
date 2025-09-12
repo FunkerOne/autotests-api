@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTEyVDE3OjA2OjQ1LjgwMDM0MyIsInVzZXJfaWQiOiJjMDA1ZDUyMS1mNGNlLTRkNjItOWExMy1jMzQ2NDViOWVlMGMifQ.025h7YrPiFvPbeuxspSQe484XWtqMBarONMxtFrlabY' \
+  -H 'content-length: 370' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Mr investment but ten green send.","maxScore":79,"minScore":24,"description":"Turn hand develop cell brother understand worker start. There ago least he owner local.\nFind upon realize total last bring score information.","estimatedTime":"6 weeks","previewFileId":"ba8842d0-780f-4dec-a271-fca71f038715","createdByUserId":"c005d521-f4ce-4d62-9a13-c34645b9ee0c"}'

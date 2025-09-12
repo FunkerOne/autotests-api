@@ -1,0 +1,24 @@
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:27 Make GET request to http://localhost:8000/api/v1/exercises/01bf4277-602e-4f52-8508-3bdce549364f
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/exercises/01bf4277-602e-4f52-8508-3bdce549364f
+INFO     BASE_ASSERTIONS:base.py:18 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:74 Check get exercise response
+INFO     EXERCISES_ASSERTIONS:exercises.py:50 Check exercise
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'id' equals to 01bf4277-602e-4f52-8508-3bdce549364f
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'title' equals to Political hair voice religious today.
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'course_id' equals to 36deca65-4e29-4e5e-aaa3-42cea849a6d4
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'max_score' equals to 87
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'min_score' equals to 2
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'order_index' equals to 41
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'description' equals to Board amount generation compare like work production. Worker share talk huge wide beautiful join. Radio agreement data measure story customer opportunity.
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'estimated_time' equals to 3 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validate JSON schema

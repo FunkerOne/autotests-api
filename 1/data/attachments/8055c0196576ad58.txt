@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTEyVDE3OjA2OjQ0LjU3ODM0NCIsInVzZXJfaWQiOiJjNGUxOWIzNy1kODgyLTRhMDItODZlZC01NTcyOWVhMTQ2YTIifQ.aRfIBCPcYwmlsyS44CE_j_CTWNHoUAJcvh7HwaWe0TE' \
+  -H 'content-length: 348' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Computer reason through.","maxScore":78,"minScore":18,"description":"Activity police future wait. Quality study will. Theory drug off.\nMinute reach show quite. Cut modern experience possible scene.","estimatedTime":"6 weeks","previewFileId":"5c14a24c-6ef6-4227-9c8c-5ca565c0ea6f","createdByUserId":"c4e19b37-d882-4a02-86ed-55729ea146a2"}'

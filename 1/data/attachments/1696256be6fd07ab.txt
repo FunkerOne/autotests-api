@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTEyVDE3OjA2OjQ0LjMwMzg2MSIsInVzZXJfaWQiOiJiYjM5OTFjZC1lNzk3LTRmOWQtYTgxZi1kZGFlNWViOWFlMzgifQ.jX132ouCCu3Mz4z1AXoCRTpKpYIVialPMVrAgyPN6sY' \
+  -H 'content-length: 374' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Sign environment message.","maxScore":56,"minScore":8,"description":"Research operation fear rate number partner figure. Practice example teacher bed but. Big along message chance every teacher. Situation make add leg coach.","estimatedTime":"4 weeks","previewFileId":"b9c3d19c-5548-4af2-a83c-80a1b5f425cf","createdByUserId":"bb3991cd-e797-4f9d-a81f-ddae5eb9ae38"}'

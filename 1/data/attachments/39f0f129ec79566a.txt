@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTEyVDE3OjA2OjQ0LjU3ODM0NCIsInVzZXJfaWQiOiJjNGUxOWIzNy1kODgyLTRhMDItODZlZC01NTcyOWVhMTQ2YTIifQ.aRfIBCPcYwmlsyS44CE_j_CTWNHoUAJcvh7HwaWe0TE' \
+  -H 'content-length: 339' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Political hair voice religious today.","courseId":"36deca65-4e29-4e5e-aaa3-42cea849a6d4","maxScore":87,"minScore":2,"orderIndex":41,"description":"Board amount generation compare like work production. Worker share talk huge wide beautiful join. Radio agreement data measure story customer opportunity.","estimatedTime":"3 weeks"}'

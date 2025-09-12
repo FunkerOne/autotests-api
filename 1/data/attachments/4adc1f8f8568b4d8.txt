@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTEyVDE3OjA2OjQxLjU5ODkyNyIsInVzZXJfaWQiOiI2OTVlM2Q2My1iMDFkLTRiNzItYTIxYy03NTMxN2IzOGU4OWMifQ.rwrpTM9Y5AQa2upQ09Oc95vvL6BsYXLdM8P_xaduZCg' \
+  -H 'content-length: 366' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Civil thought course about real look miss.","maxScore":68,"minScore":25,"description":"Tax teacher doctor free sometimes free PM. Congress me policy entire account positive. Without north enter mean threat yet event.","estimatedTime":"6 weeks","previewFileId":"a00fe55c-1b72-4641-a9c8-df8463a1014a","createdByUserId":"695e3d63-b01d-4b72-a21c-75317b38e89c"}'
