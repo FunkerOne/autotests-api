@@ -4,6 +4,7 @@ from httpx import Response
 
 from tools.routes import APIRoutes
 from clients.api_client import APIClient
+from clients.api_coverage import tracker
 from clients.exercises.exercises_schema import (
     GetExercisesQuerySchema,
     CreateExerciseRequestSchema,
@@ -24,6 +25,7 @@ class ExercisesClient(APIClient):
     """
 
     @allure.step("Get exercises")
+    @tracker.track_coverage_httpx(APIRoutes.EXERCISES)
     def get_exercises_api(self, query: GetExercisesQuerySchema) -> Response:
         """
         Метод получает все упражнения по идентификатору курса.
@@ -34,6 +36,7 @@ class ExercisesClient(APIClient):
         return self.get(url=APIRoutes.EXERCISES, params=query.model_dump(by_alias=True))
 
     @allure.step("Get exercise by id {exercise_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}/{{exercise_id}}")
     def get_exercise_api(self, exercise_id: str) -> Response:
         """
         Метод получения упражнения по его идентификатору.
@@ -44,6 +47,7 @@ class ExercisesClient(APIClient):
         return self.get(url=f"{APIRoutes.EXERCISES}/{exercise_id}")
 
     @allure.step("Create exercise")
+    @tracker.track_coverage_httpx(APIRoutes.EXERCISES)
     def create_exercise_api(self, request: CreateExerciseRequestSchema) -> Response:
         """
         Метод создания упражнения.
@@ -55,6 +59,7 @@ class ExercisesClient(APIClient):
         return self.post(url=APIRoutes.EXERCISES, json=request.model_dump(by_alias=True))
 
     @allure.step("Update exercise by id {exercise_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}/{{exercise_id}}")
     def update_exercise_api(
             self,
             exercise_id: str,
@@ -71,6 +76,7 @@ class ExercisesClient(APIClient):
         return self.patch(url=f"{APIRoutes.EXERCISES}/{exercise_id}", json=request.model_dump(by_alias=True))
 
     @allure.step("Delete exercise by id {exercise_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}/{{exercise_id}}")
     def delete_exercise_api(self, exercise_id: str) -> Response:
         """
         Метод удаления упражнения.
