@@ -7,7 +7,9 @@ from http import HTTPStatus
 from allure_commons.types import Severity
 
 from config import settings
-from clients.errors_schema import ValidationErrorResponseSchema
+from clients.errors_schema import (
+    ValidationErrorResponseSchema, InternalErrorResponseSchema
+)
 from clients.files.files_client import FilesClient
 from clients.files.files_schema import (
     CreateFileRequestSchema, CreateFileResponseSchema, GetFileResponseSchema
@@ -22,7 +24,7 @@ from tools.assertions.files import (
     assert_create_file_response, assert_get_file_response,
     assert_create_file_with_empty_filename_response,
     assert_create_file_with_empty_directory_response,
-    assert_get_file_with_incorrect_file_id_response
+    assert_get_file_with_incorrect_file_id_response, assert_file_not_found_response
 )
 from tools.assertions.schema import validate_json_schema
 
@@ -63,6 +65,24 @@ class TestFiles:
         assert_get_file_response(response_data, function_file.response)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
+
+    @allure.tag(AllureTag.DELETE_ENTITY)
+    @allure.story(AllureStory.DELETE_ENTITY)
+    @allure.title("Delete file")
+    @allure.severity(Severity.NORMAL)
+    @allure.sub_suite(AllureStory.DELETE_ENTITY)
+    def test_delete_file(self, files_client: FilesClient, function_file: FileFixture):
+        delete_response = files_client.delete_file_api(function_file.response.file.id)
+
+        assert_status_code(delete_response.status_code, HTTPStatus.OK)
+
+        get_response = files_client.get_file_api(function_file.response.file.id)
+        get_response_data = InternalErrorResponseSchema.model_validate_json(get_response.text)
+
+        assert_status_code(get_response.status_code, HTTPStatus.NOT_FOUND)
+        assert_file_not_found_response(get_response_data)
+
+        validate_json_schema(get_response.json(), get_response_data.model_json_schema())
 
     @allure.tag(AllureTag.VALIDATE_ENTITY)
     @allure.story(AllureStory.VALIDATE_ENTITY)

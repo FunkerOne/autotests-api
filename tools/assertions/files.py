@@ -1,12 +1,19 @@
 import allure
 
 from config import settings
-from clients.errors_schema import ValidationErrorResponseSchema, ValidationErrorSchema
+from clients.errors_schema import (
+    ValidationErrorResponseSchema,
+    ValidationErrorSchema,
+    InternalErrorResponseSchema
+)
 from clients.files.files_schema import (
-    CreateFileRequestSchema, CreateFileResponseSchema, FileSchema, GetFileResponseSchema
+    CreateFileRequestSchema, CreateFileResponseSchema,
+    FileSchema, GetFileResponseSchema
 )
 from tools.assertions.base import assert_equal
-from tools.assertions.errors import assert_validation_error_response
+from tools.assertions.errors import (
+    assert_validation_error_response, assert_internal_error_response
+)
 from tools.logger import get_logger
 
 logger = get_logger("FILES_ASSERTIONS")
@@ -113,6 +120,18 @@ def assert_create_file_with_empty_directory_response(actual: ValidationErrorResp
         ]
     )
     assert_validation_error_response(actual, expected)
+
+
+@allure.step("Check file not found response")
+def assert_file_not_found_response(actual: InternalErrorResponseSchema):
+    """
+    Функция для проверки ошибки, если файл не найден на сервере.
+
+    :param actual: Фактический ответ.
+    :raises AssertionError: Если фактический ответ не соответствует ошибке "File not found"
+    """
+    expected = InternalErrorResponseSchema(details="File not found")
+    assert_internal_error_response(actual, expected)
 
 
 @allure.step("Check get file with incorrect file id response")
