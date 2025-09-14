@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/3b589c4b-f5f1-4f55-9bcd-cd71b5d5ffbf' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE2OjAzOjA1LjY5MTkzNCIsInVzZXJfaWQiOiIwMzBiNjRhZC1kOWVjLTQ1NWEtYTVjMC04ZWFmNjY2ZGM1YWIifQ.yux9Jl5Io4rOd6etSmcxHhXzUbOifB9koKxRm0Nxm5g' \
+  -H 'content-length: 218' \
+  -H 'content-type: application/json' \
+  -d '{"title":"World likely TV nor step which while.","maxScore":60,"minScore":6,"description":"Middle myself return. Car almost town.\nPicture act sell theory. Congress in shake coach long with.","estimatedTime":"9 weeks"}'

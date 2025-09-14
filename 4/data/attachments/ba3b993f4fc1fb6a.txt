@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE2OjAzOjA0Ljc5NzY3NCIsInVzZXJfaWQiOiI1MmQ0ZjI5ZC1jOWE1LTQyMTctYWRiZC04YzljYjU3NzQ5YmEifQ.1eKMOl345A_sy2iHzmjkWvVUTY4sNglBbjCsLp0Dma0' \
+  -H 'content-length: 351' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Wait reach event room focus.","maxScore":87,"minScore":8,"description":"Both human office such event whom. Common television word test opportunity. Instead really I relationship company visit audience.","estimatedTime":"3 weeks","previewFileId":"e9927a22-6269-4d5f-8464-395dc1a04cf3","createdByUserId":"52d4f29d-c9a5-4217-adbd-8c9cb57749ba"}'

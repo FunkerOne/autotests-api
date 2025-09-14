@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE2OjAzOjA0LjIxNTM2NyIsInVzZXJfaWQiOiI5ZDhiMmVlYS1mYTY2LTRjNzItODhmMi1iYjEzZGE4Nzc4MTEifQ.OfatM4aPD3Sr5_WwpPmXJWQsA5NqIjXu25OM83lAKPo' \
+  -H 'content-length: 353' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Say when picture parent point anyone hair control.","maxScore":56,"minScore":5,"description":"Attorney bad agent accept. News tough new letter number skill game. Similar society end gun buy computer you.","estimatedTime":"1 weeks","previewFileId":"1c58f468-9d21-4985-95a2-74e16eca3c97","createdByUserId":"9d8b2eea-fa66-4c72-88f2-bb13da877811"}'

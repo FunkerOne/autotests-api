@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE2OjAzOjA4LjM2NDIxNiIsInVzZXJfaWQiOiJkNzdjODBiZS04MGVlLTQ2M2ItYWZmMC01MDkxODg0ZDUyMzcifQ.fFyCexDW8Rb-rRz4vOPwzKEOkNWTorROWGLaQNuKUxE' \
+  -H 'content-length: 373' \
+  -H 'content-type: application/json' \
+  -d '{"title":"There reduce seat must.","maxScore":66,"minScore":28,"description":"Great job once activity. Take open us. Some avoid listen great hour.\nExpert dinner will heart my. Bar face fish even general series. At though spend road.","estimatedTime":"4 weeks","previewFileId":"3d755a70-0911-4e14-b07b-c40e501e04c6","createdByUserId":"d77c80be-80ee-463b-aff0-5091884d5237"}'

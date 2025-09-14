@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE2OjAzOjA4LjA5MDg4MSIsInVzZXJfaWQiOiI4YTYyODUzNi1kYzg1LTQwY2MtODA2Yy0zZDRjNzg5ZDBjODgifQ.W8TJQO4FPnuc1liJkW8pS1SNr1lxw9N_xoH73po9SU4' \
+  -H 'content-length: 385' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Matter image reduce success tree fine stand.","maxScore":96,"minScore":18,"description":"Suffer enough gun guess. Region language technology wear. Develop why administration visit child. Interview religious likely still give different.","estimatedTime":"7 weeks","previewFileId":"095c63a9-941c-4595-be3c-4ddf9cb71537","createdByUserId":"8a628536-dc85-40cc-806c-3d4c789d0c88"}'

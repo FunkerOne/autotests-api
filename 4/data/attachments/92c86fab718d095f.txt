@@ -1,0 +1,19 @@
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:27 Make PATCH request to http://localhost:8000/api/v1/courses/3b589c4b-f5f1-4f55-9bcd-cd71b5d5ffbf
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/courses/3b589c4b-f5f1-4f55-9bcd-cd71b5d5ffbf
+INFO     BASE_ASSERTIONS:base.py:18 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:28 Check update course response
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'title' equals to World likely TV nor step which while.
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'max_score' equals to 60
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'min_score' equals to 6
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'description' equals to Middle myself return. Car almost town.
+Picture act sell theory. Congress in shake coach long with.
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'estimate_time' equals to 9 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validate JSON schema

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE2OjAzOjA2Ljg4NDEyMCIsInVzZXJfaWQiOiJhOGQ0YWMyMy05ODNkLTRmODMtYTA3YS0wMmUzYTRjNjc1ZDcifQ.KiLCzAuKagOeqDrRD_NbzfZGDGcJ3oL796jzOR9SdKc' \
+  -H 'content-length: 430' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Stay set situation current water beat.","maxScore":59,"minScore":11,"description":"Low shoulder everyone cost thus trial garden. Race cause sure first rock.\nWish speak daughter expect front none arm.\nMost call discover where. Value ask amount individual test.\nPlan source side.","estimatedTime":"8 weeks","previewFileId":"30e013dc-cd27-4e1b-9cad-cfa09e4676ad","createdByUserId":"a8d4ac23-983d-4f83-a07a-02e3a4c675d7"}'

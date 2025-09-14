@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE2OjAzOjA1LjY5MTkzNCIsInVzZXJfaWQiOiIwMzBiNjRhZC1kOWVjLTQ1NWEtYTVjMC04ZWFmNjY2ZGM1YWIifQ.yux9Jl5Io4rOd6etSmcxHhXzUbOifB9koKxRm0Nxm5g' \
+  -H 'content-length: 414' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Operation matter police already.","maxScore":88,"minScore":19,"description":"Practice those home kid Republican agree. Rate mission decide. Say crime could white foreign price instead.\nCompany cost game its whose account owner. Night more reality concern ability.","estimatedTime":"1 weeks","previewFileId":"47cd64a8-3dd7-4169-801e-7520122826e3","createdByUserId":"030b64ad-d9ec-455a-a5c0-8eaf666dc5ab"}'
