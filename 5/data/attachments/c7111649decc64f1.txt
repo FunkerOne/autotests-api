@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE5OjI4OjQ2LjE3MDUzOSIsInVzZXJfaWQiOiI4ZDE4OTcyNy01YjIyLTQ5M2MtYTllOS0xYmU3NDYyNDI2YTAifQ.yUu75emUfvbh9Ex5wPrfv8EsNZQtY6cJOF9thiy4nIc' \
+  -H 'content-length: 412' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Wear general hope later stuff wish.","maxScore":66,"minScore":13,"description":"Star executive wife. Many force once. Religious vote city future as clear individual.\nScore tonight live three bar home. College leave subject development behavior explain above on.","estimatedTime":"8 weeks","previewFileId":"612c58d2-b1ad-45c0-9aa5-b8fee6565b8f","createdByUserId":"8d189727-5b22-493c-a9e9-1be7462426a0"}'

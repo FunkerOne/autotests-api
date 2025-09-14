@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE5OjI4OjQzLjc3MDY0NSIsInVzZXJfaWQiOiJkZTRkMWEyZC1hNzM5LTQ5NDAtYTJkZi04MGJiMDVhMWUwZDUifQ.SXOGTWYohk490nKv9qsl0bXg82lvPzrqxG2SnvTVeR0' \
+  -H 'content-length: 359' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Kid beat others beautiful.","maxScore":53,"minScore":28,"description":"Strategy culture quite even him it trouble. Six country son check position admit author. Tree exist western mention church only executive.","estimatedTime":"6 weeks","previewFileId":"012ac1c7-b1ad-4897-99f9-b562c9acef76","createdByUserId":"de4d1a2d-a739-4940-a2df-80bb05a1e0d5"}'

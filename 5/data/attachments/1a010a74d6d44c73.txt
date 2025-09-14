@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/a9b09ac7-392f-493f-8db3-a2427b66bb9d' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE5OjI4OjQ0LjM1NjQzNyIsInVzZXJfaWQiOiJjMDQzMTM1My1kMGM1LTQzOGQtYTdmNC0zNWRlN2VlNjRlY2MifQ.rG3b-Fr6rIvPTF2tFoeT0JdmV-l4glAPL-dmtkjfXEA' \
+  -H 'content-length: 302' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Their control here country.","maxScore":97,"minScore":20,"orderIndex":42,"description":"Too win themselves foot until carry.\nGuess center perform strategy suddenly can. Doctor I western former deep. Fish trade strategy treat within. Meeting news bill ever within.","estimatedTime":"9 weeks"}'

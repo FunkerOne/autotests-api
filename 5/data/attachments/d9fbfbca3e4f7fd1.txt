@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE5OjI4OjQyLjU5NzcwMiIsInVzZXJfaWQiOiIwZTNlYTI1NS02ZTUxLTQyYmItYTQyNS04OTJlNTA4ZDkyMzYifQ.77QcrmaQa9rrMX5uNCu5XclsxI_clczHH0ZkLWEGgUk' \
+  -H 'content-length: 395' \
+  -H 'content-type: application/json' \
+  -d '{"title":"On in budget audience.","maxScore":55,"minScore":6,"description":"Defense case wide top. Glass Congress movement course sure carry million. Newspaper however should break.\nNotice cause value car pass interview. Soon old authority structure try.","estimatedTime":"9 weeks","previewFileId":"5159d1ed-a544-403d-bdca-b257b4c65a3e","createdByUserId":"0e3ea255-6e51-42bb-a425-892e508d9236"}'

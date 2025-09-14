@@ -1,0 +1,19 @@
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:18 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:91 Check create course response
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'title' equals to On in budget audience.
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'max_score' equals to 55
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'min_score' equals to 6
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'description' equals to Defense case wide top. Glass Congress movement course sure carry million. Newspaper however should break.
+Notice cause value car pass interview. Soon old authority structure try.
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'estimate_time' equals to 9 weeks
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'preview_file_id' equals to 5159d1ed-a544-403d-bdca-b257b4c65a3e
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'created_by_user_id' equals to 0e3ea255-6e51-42bb-a425-892e508d9236
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validate JSON schema

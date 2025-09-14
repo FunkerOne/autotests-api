@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE5OjI4OjQ1LjU5NDIwOSIsInVzZXJfaWQiOiJlYmI4YzM5YS0zMjM4LTQ4NjktYTlkMy03ZWVmODE1YzAyMWIifQ.QSGvgPPJKJ2uAe-WsqWEg5IDj_JpQEuHgDaUThY7YVk' \
+  -H 'content-length: 331' \
+  -H 'content-type: application/json' \
+  -d '{"title":"One government such president onto mention make fact.","maxScore":69,"minScore":12,"description":"Hotel necessary turn southern kid lot certain. Man less door yet. Minute argue new.","estimatedTime":"5 weeks","previewFileId":"e1925f53-7e9a-425f-acb9-f635a7e2d625","createdByUserId":"ebb8c39a-3238-4869-a9d3-7eef815c021b"}'

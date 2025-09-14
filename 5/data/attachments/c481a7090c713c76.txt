@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/07f61a38-1f5a-433f-bfff-8660f72018a9' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE5OjI4OjQzLjE3OTc1MyIsInVzZXJfaWQiOiI3M2YxZDhlOC1lYzJkLTQ5MWItYmJhYi1hNzYwNTg4NzFhMjIifQ._ajL4-DWUNP3fNPeRHJL9ninbL9BEZLc5kzk_-TcQqs' \
+  -H 'content-length: 276' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Instead skill partner whether plan.","maxScore":84,"minScore":22,"description":"Public blue speak follow imagine. Family individual bag one generation four position computer.\nTown identify medical. Care ok worker lay another tough speak.","estimatedTime":"6 weeks"}'

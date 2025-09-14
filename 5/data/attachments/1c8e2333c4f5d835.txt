@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE5OjI4OjQyLjAwNDUxMCIsInVzZXJfaWQiOiJkNjQ0NmYyOC1mMzFlLTQzNmYtYTgwMC05M2IzYjVkN2RhYmMifQ.0muSNJH1uTPROkjU3Bbm50-BXLgaJSW3thYN1DmSrw4' \
+  -H 'content-length: 406' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Major stand clearly person.","maxScore":66,"minScore":29,"description":"Despite we chance however cultural result. Provide talk deal worker. Thousand million court concern including.\nProduction finally wide plant attack central. Part its while ok type in.","estimatedTime":"6 weeks","previewFileId":"19912fd3-a8e8-4c89-9dd9-8d5246388b88","createdByUserId":"d6446f28-f31e-436f-a800-93b3b5d7dabc"}'

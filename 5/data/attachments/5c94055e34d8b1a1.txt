@@ -1,0 +1,24 @@
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:27 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:27 Make GET request to http://localhost:8000/api/v1/exercises/ecfb7cc4-d4f0-4b81-b5f4-9ecbaa9d1f6f
+INFO     HTTP_LOGGER:event_hooks.py:36 Got response 200 OK from http://localhost:8000/api/v1/exercises/ecfb7cc4-d4f0-4b81-b5f4-9ecbaa9d1f6f
+INFO     BASE_ASSERTIONS:base.py:18 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:74 Check get exercise response
+INFO     EXERCISES_ASSERTIONS:exercises.py:50 Check exercise
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'id' equals to ecfb7cc4-d4f0-4b81-b5f4-9ecbaa9d1f6f
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'title' equals to Work with environmental test single.
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'course_id' equals to 5e8605bb-1020-4cfe-8886-1d390134e918
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'max_score' equals to 92
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'min_score' equals to 18
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'order_index' equals to 11
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'description' equals to Four city free. Both billion best middle community thus city. Next ten community.
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'estimated_time' equals to 2 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validate JSON schema
