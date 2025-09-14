@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/637b30dd-b631-4085-a00c-770013d71d8e' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE0OjI4OjE4LjYxMjc4MSIsInVzZXJfaWQiOiIwYmFhODNiOC0yOWQ4LTQ4NDItOTU5Mi02MGEwNWQzNDdjOWIifQ.oXDEus6O6KAEgT587ULW3Uat7viR4InkjlLquH2JfS0' \
+  -H 'content-length: 256' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Certain answer American official.","maxScore":65,"minScore":9,"description":"Tonight wish fact many. Within party run law others. Go activity book good.\nPeace face early. Herself sport cover which book everything hit.","estimatedTime":"9 weeks"}'

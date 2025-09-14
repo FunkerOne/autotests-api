@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE0OjI4OjE5LjUxODY2NyIsInVzZXJfaWQiOiI3N2VlY2E3OC1iOGNhLTRhNDUtODdmZS04ZWYyMTRmN2Q3ZTYifQ.c7-w9Oy42CcSIuQAb_rLigOwHEeh0Ztrlw4EG7cx79s' \
+  -H 'content-length: 435' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Than national article few themselves painting production.","maxScore":89,"minScore":7,"description":"Help our science necessary represent table eye later. Discussion yard hard.\nMean worker drop stop measure. Practice exist increase class charge federal some. Yes truth suffer medical.","estimatedTime":"8 weeks","previewFileId":"2834cf07-0078-4b06-ae25-1012eeb1d0fe","createdByUserId":"77eeca78-b8ca-4a45-87fe-8ef214f7d7e6"}'

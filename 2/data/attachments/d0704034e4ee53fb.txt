@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE0OjI4OjE3LjE5OTI3NiIsInVzZXJfaWQiOiI0Njc1ODFhZS0zNDU4LTRjNmEtYmU2Mi0xZTQ2ZWM0ZWVmZDQifQ.wz2nQkoDtKcVdt5c2jjo_kZ4l--WITaQ4vIfQVPgKx8' \
+  -H 'content-length: 379' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Trial only beautiful wrong.","maxScore":53,"minScore":12,"description":"Focus fire under answer. Fund concern allow lose feel another project.\nLong guess coach little say sell few. Budget goal operation Mr method lay word argue.","estimatedTime":"4 weeks","previewFileId":"72829885-1b28-4170-a3a9-d618ec0b03c8","createdByUserId":"467581ae-3458-4c6a-be62-1e46ec4eefd4"}'

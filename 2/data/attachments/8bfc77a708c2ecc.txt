@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE0OjI4OjIxLjg5NjI0NyIsInVzZXJfaWQiOiIyNjE5MzdjNy1hYWFhLTRkYTgtOGMzMC0wYzk1ZDlkYTMwNDcifQ.GJPoxkjDx6mf8GOQdofenBYxKdkvefbroPoys1ohNms' \
+  -H 'content-length: 394' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Success such onto statement real.","maxScore":90,"minScore":27,"description":"Seven chair trade develop. Race consumer hand anyone. Save what prevent their agency.\nFact do view hour life. Practice history hope bank region move personal assume.","estimatedTime":"3 weeks","previewFileId":"1feb4a32-a53b-42f8-8fcd-723d75599404","createdByUserId":"261937c7-aaaa-4da8-8c30-0c95d9da3047"}'

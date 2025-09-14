@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE0OjI4OjIwLjcwMDUxMiIsInVzZXJfaWQiOiIwYWMxYWQwMi05ZGZmLTRmNzgtYjAwYy1lZWI2M2I5ZDhlYjMifQ.uCwwQZAjKtT-Dq3QZggq6l_oHOJP-bk0oFIRPxPWblc' \
+  -H 'content-length: 349' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Free identify box make against.","maxScore":79,"minScore":1,"description":"Value machine rock ago citizen week computer camera. Something fall card focus support draw easy. Look only catch president.","estimatedTime":"7 weeks","previewFileId":"7f4a491c-858b-4bb4-89dc-430e2b982afe","createdByUserId":"0ac1ad02-9dff-4f78-b00c-eeb63b9d8eb3"}'

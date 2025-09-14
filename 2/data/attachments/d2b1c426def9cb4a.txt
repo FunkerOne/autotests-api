@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE0OjI4OjE5Ljc5MTU1NSIsInVzZXJfaWQiOiI5Mzc4Yjc2MC04ZTI0LTRhZDctOGM1Ni0wY2YwYTEzNGNkN2MifQ.v63mxk2G_w0bJOueb9OzG3W3jv-N3_26IGBZRxZmN9M' \
+  -H 'content-length: 365' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Statement Mrs early particularly suggest.","courseId":"2d2dfefa-29e7-40ee-8b56-9bf0485d7731","maxScore":69,"minScore":18,"orderIndex":38,"description":"Buy thus source wonder build. Drug hand public around look.\nLetter end hand keep describe.\nAbility cultural place group industry value. Have spend together reflect far city.","estimatedTime":"5 weeks"}'

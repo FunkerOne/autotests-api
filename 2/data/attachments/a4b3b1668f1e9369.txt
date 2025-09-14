@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/7de7be61-dd97-43c8-aca4-64fe499ef2c4' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE0OjI4OjE5Ljc5MTU1NSIsInVzZXJfaWQiOiI5Mzc4Yjc2MC04ZTI0LTRhZDctOGM1Ni0wY2YwYTEzNGNkN2MifQ.v63mxk2G_w0bJOueb9OzG3W3jv-N3_26IGBZRxZmN9M' \
+  -H 'content-length: 300' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Green whole knowledge send finish lead thought.","maxScore":78,"minScore":17,"orderIndex":7,"description":"Save ever already data even also alone. Focus million realize city. Professional court serve professional mean.\nOffice that crime. Able behind later city.","estimatedTime":"2 weeks"}'

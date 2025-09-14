@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE0OjI4OjE5Ljc5MTU1NSIsInVzZXJfaWQiOiI5Mzc4Yjc2MC04ZTI0LTRhZDctOGM1Ni0wY2YwYTEzNGNkN2MifQ.v63mxk2G_w0bJOueb9OzG3W3jv-N3_26IGBZRxZmN9M' \
+  -H 'content-length: 419' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Feel listen action their per court bad Republican.","maxScore":99,"minScore":24,"description":"Article upon must although. Personal there many clearly. Concern yourself respond edge when police brother send.\nCurrent serve boy perform at picture behavior. Way test Mrs.","estimatedTime":"7 weeks","previewFileId":"1376c439-1dee-4b9b-a81d-a757436feca4","createdByUserId":"9378b760-8e24-4ad7-8c56-0cf0a134cd7c"}'

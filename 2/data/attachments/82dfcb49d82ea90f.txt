@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE0OjI4OjE4LjYxMjc4MSIsInVzZXJfaWQiOiIwYmFhODNiOC0yOWQ4LTQ4NDItOTU5Mi02MGEwNWQzNDdjOWIifQ.oXDEus6O6KAEgT587ULW3Uat7viR4InkjlLquH2JfS0' \
+  -H 'content-length: 338' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Ball career once budget.","maxScore":97,"minScore":7,"description":"Especially everything office reflect watch. White large piece one commercial sort learn. Thus send since data out state.","estimatedTime":"7 weeks","previewFileId":"91c26a66-c4d2-47ab-8edd-13e6b46670f9","createdByUserId":"0baa83b8-29d8-4842-9592-60a05d347c9b"}'
