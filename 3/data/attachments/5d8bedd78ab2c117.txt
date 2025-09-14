@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE0OjMzOjI1LjQ2NjgzNyIsInVzZXJfaWQiOiIwYjBjZThmNC0xMmM3LTQ2MGUtYmVmNi0xZTNiMDY0OGIxMDgifQ.fLo0ORY7V-kcA7AZo5msVOX-BhQ0bF8IIMWdDrzJ8E4' \
+  -H 'content-length: 388' \
+  -H 'content-type: application/json' \
+  -d '{"title":"We education class help prevent.","maxScore":84,"minScore":26,"description":"Contain herself box. Suggest benefit of specific shoulder successful why. Above cultural office chance series account. Process professor us research prove base.","estimatedTime":"10 weeks","previewFileId":"fed6972f-ec1f-4737-91e4-cc7affb58312","createdByUserId":"0b0ce8f4-12c7-460e-bef6-1e3b0648b108"}'

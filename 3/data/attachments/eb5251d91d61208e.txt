@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE0OjMzOjI2LjY1OTc4MSIsInVzZXJfaWQiOiI3MjlhM2M0Mi0zN2MxLTRkOTQtYWVkNS04ZDE3MTA3ZTNlODMifQ.J9GvC66Yvgr89SEaUUxJntg3tnyDISR6Yxio7LiKBAY' \
+  -H 'content-length: 345' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Option their instead may career more.","courseId":"225e9231-9bab-4d14-a47c-a2518220d646","maxScore":68,"minScore":14,"orderIndex":95,"description":"Court church face over so education trade. Build recently remember.\nLaw always later nature fill perform. Though point nothing resource amount every various.","estimatedTime":"10 weeks"}'

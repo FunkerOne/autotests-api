@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE0OjMzOjI2LjM4NzE2NiIsInVzZXJfaWQiOiIzMWNlNmE0ZC1mNDM3LTQxMWItOTgzMS1hOGQ4MTEyMjQ0ZjEifQ.mzFxmbo5iV1FdnNBThE_LJtSsID-eGkibWqHMV4ZgGg' \
+  -H 'content-length: 403' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Chance tax hot increase stop.","maxScore":59,"minScore":9,"description":"Get wife common choose maybe too. Conference military bed guess teach unit. Model though language no call several race. However theory late me land especially.\nHotel east use its.","estimatedTime":"1 weeks","previewFileId":"ef1591a1-443d-4868-8e04-e8ae92102b5e","createdByUserId":"31ce6a4d-f437-411b-9831-a8d8112244f1"}'

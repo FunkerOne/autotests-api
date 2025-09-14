@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE0OjMzOjI0LjI4Mjk4NSIsInVzZXJfaWQiOiI2NjgyNWQ3ZC0yNmQyLTRiYTktOWJhYS05NjlmMWU2ZTA2M2YifQ.AqmJlqiezXrsU-Hmsj9ZzZ3Z2z9FbyjzB93tsusqfac' \
+  -H 'content-length: 359' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Value pass measure such daughter.","maxScore":55,"minScore":19,"description":"Opportunity material star yes floor fine. Information different past call upon sing worry. Quality party meet avoid already degree.","estimatedTime":"6 weeks","previewFileId":"3925b7db-dc2d-4624-8fbd-a825534e6b32","createdByUserId":"66825d7d-26d2-4ba9-9baa-969f1e6e063f"}'

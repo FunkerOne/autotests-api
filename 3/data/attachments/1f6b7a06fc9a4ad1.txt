@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/38320c55-8563-4045-b489-c405b7dbc6d1' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE0OjMzOjI0LjI4Mjk4NSIsInVzZXJfaWQiOiI2NjgyNWQ3ZC0yNmQyLTRiYTktOWJhYS05NjlmMWU2ZTA2M2YifQ.AqmJlqiezXrsU-Hmsj9ZzZ3Z2z9FbyjzB93tsusqfac' \
+  -H 'content-length: 199' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Right policy spring range worry.","maxScore":85,"minScore":11,"description":"Cause story free game little only order.\nUs work get fund. Effort them behind help.","estimatedTime":"7 weeks"}'

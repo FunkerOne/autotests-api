@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE0OjMzOjI3LjU4NDkyMiIsInVzZXJfaWQiOiJhM2M4MjQ5ZS05NTkxLTRkZjgtYTgxNS03ODgwNDkzZWRlNWUifQ.h-T0HP-qUEZheVe_dWwO9Y4PnKeovC2y1V3QYoz9OBc' \
+  -H 'content-length: 297' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Opportunity stuff hold raise probably because training understand.","courseId":"4e0ad35f-80b0-4d4b-8df7-281160271584","maxScore":85,"minScore":8,"orderIndex":2,"description":"Skill garden industry hour information speak certain. Authority miss ahead probably.","estimatedTime":"4 weeks"}'

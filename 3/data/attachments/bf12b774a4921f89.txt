@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE0OjMzOjI3LjU4NDkyMiIsInVzZXJfaWQiOiJhM2M4MjQ5ZS05NTkxLTRkZjgtYTgxNS03ODgwNDkzZWRlNWUifQ.h-T0HP-qUEZheVe_dWwO9Y4PnKeovC2y1V3QYoz9OBc' \
+  -H 'content-length: 411' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Serve water institution door marriage city will.","maxScore":77,"minScore":24,"description":"Time over type to source ten. Government group catch treatment method director. Care both in. Individual long community small growth.\nLetter whole remember born teach.","estimatedTime":"6 weeks","previewFileId":"2ee46dd2-5978-4ea8-91cd-e9d0773a6ab9","createdByUserId":"a3c8249e-9591-4df8-a815-7880493ede5e"}'

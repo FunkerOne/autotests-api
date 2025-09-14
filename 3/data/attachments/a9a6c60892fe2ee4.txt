@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE0OjMzOjI2LjY1OTc4MSIsInVzZXJfaWQiOiI3MjlhM2M0Mi0zN2MxLTRkOTQtYWVkNS04ZDE3MTA3ZTNlODMifQ.J9GvC66Yvgr89SEaUUxJntg3tnyDISR6Yxio7LiKBAY' \
+  -H 'content-length: 366' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Sister her pick.","maxScore":75,"minScore":9,"description":"Character size evening door. Tonight appear under community analysis popular name somebody. Everybody none thought. Summer event purpose involve population.","estimatedTime":"8 weeks","previewFileId":"860a10d9-084c-4e71-8f5c-e73de76dafe5","createdByUserId":"729a3c42-37c1-4d94-aed5-8d17107e3e83"}'
